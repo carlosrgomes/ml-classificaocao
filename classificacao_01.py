@@ -26,5 +26,7 @@ teste = [misterioso1, misterioso2, misterioso3]
 
 resultado = modelo.predict(teste)
 
+valores = {-1: "Cachorro",
+            1: "Porco"}
 
-print(resultado)
+print([valores[i] for i in resultado])
